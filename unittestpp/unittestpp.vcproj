@@ -189,22 +189,6 @@
 			>
 		</File>
 		<File
-			RelativePath=".\DeferredTestReporter.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\DeferredTestReporter.h"
-			>
-		</File>
-		<File
-			RelativePath=".\DeferredTestResult.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\DeferredTestResult.h"
-			>
-		</File>
-		<File
 			RelativePath=".\ExceptionMacros.h"
 			>
 		</File>
@@ -306,14 +290,6 @@
 		</File>
 		<File
 			RelativePath=".\unittestpp.h"
-			>
-		</File>
-		<File
-			RelativePath=".\XmlTestReporter.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\XmlTestReporter.h"
 			>
 		</File>
 	</Files>

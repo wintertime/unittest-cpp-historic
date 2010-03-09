@@ -203,10 +203,6 @@
 			>
 		</File>
 		<File
-			RelativePath=".\TestDeferredTestReporter.cpp"
-			>
-		</File>
-		<File
 			RelativePath=".\TestExceptions.cpp"
 			>
 		</File>
@@ -248,10 +244,6 @@
 		</File>
 		<File
 			RelativePath=".\TestUnitTestPP.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\TestXmlTestReporter.cpp"
 			>
 		</File>
 	</Files>
