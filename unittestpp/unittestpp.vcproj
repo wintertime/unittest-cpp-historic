@@ -205,6 +205,10 @@
 			>
 		</File>
 		<File
+			RelativePath=".\ExceptionMacros.h"
+			>
+		</File>
+		<File
 			RelativePath=".\ExecuteTest.h"
 			>
 		</File>

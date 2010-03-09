@@ -207,6 +207,10 @@
 			>
 		</File>
 		<File
+			RelativePath=".\TestExceptions.cpp"
+			>
+		</File>
+		<File
 			RelativePath=".\TestMemoryOutStream.cpp"
 			>
 		</File>
