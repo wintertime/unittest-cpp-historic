@@ -203,6 +203,10 @@
 			>
 		</File>
 		<File
+			RelativePath=".\TestDeferredTestReporter.cpp"
+			>
+		</File>
+		<File
 			RelativePath=".\TestExceptions.cpp"
 			>
 		</File>
