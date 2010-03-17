@@ -103,7 +103,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				Optimization="1"
+				Optimization="3"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_DEPRECATE"
 				ExceptionHandling="2"
 				RuntimeLibrary="2"
@@ -226,6 +226,10 @@
 		</File>
 		<File
 			RelativePath=".\ReportAssert.h"
+			>
+		</File>
+		<File
+			RelativePath=".\ReportAssertImpl.h"
 			>
 		</File>
 		<File
