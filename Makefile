@@ -7,8 +7,8 @@ RM = rm
 
 .SUFFIXES: .o .cpp
 
-lib = libUnitTest++.a
-test = TestUnitTest++
+lib = libunittestpp.a
+test = test-unittestpp
 
 src = src/AssertException.cpp \
 	src/Test.cpp \
@@ -37,7 +37,7 @@ endif
 test_src = src/tests/Main.cpp \
 	src/tests/TestAssertHandler.cpp \
 	src/tests/TestChecks.cpp \
-	src/tests/TestUnitTest++.cpp \
+	src/tests/TestUnitTestPP.cpp \
 	src/tests/TestTest.cpp \
 	src/tests/TestTestResults.cpp \
 	src/tests/TestTestRunner.cpp \
@@ -72,14 +72,16 @@ all: $(test)
 
 
 $(lib): $(objects) 
+	@mkdir -p lib/win32_gcc_debug
 	@echo Creating $(lib) library...
-	@ar cr $(lib) $(objects)
-    
+	@ar cr lib/win32_gcc_debug/$(lib) $(objects)
+
 $(test): $(lib) $(test_objects)
+	@mkdir -p bin/win32_gcc_debug
 	@echo Linking $(test)...
-	@$(CXX) $(LDFLAGS) -o $(test) $(test_objects) $(lib)
+	@$(CXX) $(LDFLAGS) -o bin/win32_gcc_debug/$(test) $(test_objects) lib/win32_gcc_debug/$(lib)
 	@echo Running unit tests...
-	@./$(test)
+	@bin/win32_gcc_debug/$(test)
 
 clean:
 	-@$(RM) $(objects) $(test_objects) $(dependencies) $(test_dependencies) $(test) $(lib) 2> /dev/null
