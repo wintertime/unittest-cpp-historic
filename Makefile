@@ -77,11 +77,11 @@ $(lib): $(objects)
 	@ar cr lib/win32_gcc_debug/$(lib) $(objects)
 
 $(test): $(lib) $(test_objects)
-	@mkdir -p bin/win32_gcc_debug
+	@mkdir -p bin/win32_gcc_static_debug
 	@echo Linking $(test)...
-	@$(CXX) $(LDFLAGS) -o bin/win32_gcc_debug/$(test) $(test_objects) lib/win32_gcc_debug/$(lib)
+	@$(CXX) $(LDFLAGS) -o bin/win32_gcc_static_debug/$(test) $(test_objects) lib/win32_gcc_debug/$(lib)
 	@echo Running unit tests...
-	@bin/win32_gcc_debug/$(test)
+	@bin/win32_gcc_static_debug/$(test)
 
 clean:
 	-@$(RM) $(objects) $(test_objects) $(dependencies) $(test_dependencies) $(test) $(lib) 2> /dev/null
